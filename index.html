@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment-1</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Places to visit this Gallery</h1>
+        </header>
+        <div class="gallery-content">
+            <div class="places">
+                <img class="img1" src="Adobe.jpeg" alt="Digital painting">
+                <img class="img2" src="logo.jpg" alt="Logo disigen">
+                <img class="img3" src="illus.jpg" alt="Painting with illustarator">
+                <img class="img4" src="eyes.jpg" alt="Digital painting with another apps">
+            </div>
+            <div class="main">
+                <img class="main-box" src="Adobe.jpeg" alt="Digital Painting">
+                <p class="title">Digital Painting</p>
+
+            </div>
+        </div>
+        <script>
+            console.log("testing")
+            console.log(document.querySelector(".img1"))
+            document.querySelector(".img1").onclick = function() {
+                document.querySelector(".main-box").src = document.querySelector(".img1").src
+                document.querySelector(".main-box").alt = document.querySelector(".img1").alt
+                document.querySelector(".title").innerHTML = document.querySelector(".img1").alt
+            }
+
+            console.log(document.querySelector(".image2"))
+            document.querySelector(".img2").onclick = function() {
+                document.querySelector(".main-box").src = document.querySelector(".img2").src
+                document.querySelector(".main-box").alt = document.querySelector(".img2").alt
+                document.querySelector(".title").innerHTML = document.querySelector(".img2").alt
+            }
+
+            console.log(document.querySelector(".img3"))
+            document.querySelector(".img3").onclick = function() {
+                document.querySelector(".main-box").src = document.querySelector(".img3").src
+                document.querySelector(".main-box").alt = document.querySelector(".img3").alt
+                document.querySelector(".title").innerHTML = document.querySelector(".img3").alt
+            }
+
+            console.log(document.querySelector(".img4"))
+            document.querySelector(".img4").onclick = function() {
+                document.querySelector(".main-box").src = document.querySelector(".img4").src
+                document.querySelector(".main-box").alt = document.querySelector(".img4").alt
+                document.querySelector(".title").innerHTML = document.querySelector(".img4").alt
+            }
+        </script>
+    </body>
+</html>
